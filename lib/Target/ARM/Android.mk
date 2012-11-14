@@ -19,7 +19,7 @@ LOCAL_SRC_FILES := $(mcld_arm_target_SRC_FILES)
 LOCAL_MODULE:= libmcldARMTarget
 
 LOCAL_MODULE_TAGS := optional
-
+LOCAL_CFLAGS := -fno-strict-aliasing
 include $(MCLD_HOST_BUILD_MK)
 include $(BUILD_HOST_STATIC_LIBRARY)
 
@@ -33,7 +33,7 @@ LOCAL_SRC_FILES := $(mcld_arm_target_SRC_FILES)
 LOCAL_MODULE:= libmcldARMTarget
 
 LOCAL_MODULE_TAGS := optional
-
+LOCAL_CFLAGS := -fno-strict-aliasing
 include $(MCLD_DEVICE_BUILD_MK)
 include $(BUILD_STATIC_LIBRARY)
 
