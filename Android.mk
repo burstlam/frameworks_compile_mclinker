@@ -5,7 +5,7 @@ LLVM_ROOT_PATH := external/llvm
 MCLD_ENABLE_ASSERTION := false
 
 include $(CLEAR_VARS)
-LOCAL_CFLAGS := -fno-strict-aliasing
+
 # MCLinker Libraries
 subdirs := \
   lib/ADT \
